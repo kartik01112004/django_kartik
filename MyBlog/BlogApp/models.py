@@ -7,5 +7,8 @@ class BlogDetails(models.Model):
     blog_desc = models.CharField(max_length= 250)
     blog_date = models.DateField()
 
-    class Meta:
-        db_table = "Blog table"
+    def __str__(self):
+        return str(self.blog_title)
+
+
+    
