@@ -34,7 +34,11 @@
     <div class="main">
       <div class="main-nav">
         <div class="nav-items">
-          <button type="button" class="nav-button" onclick="selectButton(this)">
+          <button
+            type="button"
+            class="nav-button selected"
+            onclick="selectButton(this)"
+          >
             Everything
           </button>
           <button type="button" class="nav-button" onclick="selectButton(this)">
@@ -58,11 +62,11 @@
             <div class="card">
               <div class="card-content">
                 <h2 class="card-title">{{b.blog_title}}</h2>
-                <p class="card-text">{{b.blog_description}}</p>
+                <p class="card-text">{{b.blog_desc}}</p>
               </div>
               <div class="card-image">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src="https://www.freepik.com/free-photos-vectors/intro-background"
                   alt="Card image"
                   class="card-img"
                 />
