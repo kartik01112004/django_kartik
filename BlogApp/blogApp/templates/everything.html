@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Everything</title>
+  </head>
+  <body>
+    <ul>
+      {% for b in blogs %}
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <h2 class="card-title">{{b.blog_title}}</h2>
+            <p class="card-text">{{b.blog_desc}}</p>
+          </div>
+          <div class="card-image">
+            <img
+              src="https://www.freepik.com/free-photos-vectors/intro-background"
+              alt="Card image"
+              class="card-img"
+            />
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
